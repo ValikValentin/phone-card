@@ -1,0 +1,264 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.6.3');
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+    url('../fonts/fontawesome/fontawesome-webfont.woff2?v=4.6.3') format('woff2'),
+    url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.6.3') format('woff'),
+    url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),
+    url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font: 400 14px 'Times New Roman', sans-serif;
+	background: #171717;
+}
+
+*{
+	margin:0 auto;
+	padding:0;
+	outline: none;
+	-webkit-border-sizing:border-box;
+		-o-border-sizing:border-box;
+			border-sizing: border-box;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	transition: all .2s;
+		-webkit-transition: all .2s;
+		-o-transition: all .2s;
+		-moz-transition: all .2s;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clearfix:before, 
+.clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear:both;
+}
+
+.container{
+	width: 90%;
+	margin:0 auto;
+}
+
+/* header */
+header{
+	background: #1f1f1f;
+	border-bottom: 2px solid #858585;
+	top: 0;
+}
+
+
+.search{
+	padding: 20px 0px;
+}
+
+.form-search{
+	display: flex;
+}
+
+.search-field{
+	border: 2px solid #858585;
+	border-radius: 4px;
+	background: #131313;
+	color: #858585;
+	width: calc(100% - 58px);
+	height: 48px;
+  padding-left: 16px;
+  vertical-align: center;
+	font-size: 22px;
+	padding-right: 16px;
+}
+
+.but-search{
+	height: 48px;
+	width: 48px;
+	margin: 0;
+	padding: 0;
+}
+
+/*end header  */
+
+/* contact */
+
+.addbook, .contact-scrolling{
+	height: calc(100vh - 220px);
+	overflow: auto;
+}
+
+.contact-scrolling{
+	padding: 20px 5%;
+}
+
+.entry{
+	background: #545454;
+	border-radius: 2px;
+	border: 2px solid #858585;
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+
+.name{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+
+.name p{
+	text-transform: capitalize;
+}
+
+.contact-info{
+	display: inline-block;
+	line-height: 1.5;
+}
+
+.button-setting{
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 25px;
+	font-weight: bold;
+}
+
+.edit , .del, .info, .email, .phone {
+	display: inline-block;
+	vertical-align: middle; 
+}
+
+.info-phone, .info-emeil{
+	font-size: 16px;
+} 
+
+.info{
+	color: #bababa;
+	padding-right: 5px;
+}
+
+.edit{
+	padding-right: 15px;
+}
+
+
+.del a, .edit a{
+	color: #8987e4;
+	padding: 5px;
+	background-color: #1f1f1f;
+	border-radius: 4px;
+	text-transform: uppercase;
+	border: 1px solid #8987e4;
+}
+
+.del a:hover,.edit a:hover{
+	background-color: #c10505;
+}
+
+
+/* end contact */
+
+/*  */
+
+footer{
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #1f1f1f;
+  border-top:2px solid #858585;
+  width: 100%;
+}
+
+.add, .refresh{
+	background: #1f1f1f;
+}
+
+.save, .cancel{
+background: #171717;
+}
+
+.save, .cancel, .add, .refresh{
+	padding: 20px 20px;
+	border: none;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.add ,.save, .cancel, .refresh{
+	color: #858585;
+}
+
+.add:hover,.save:hover, .cancel:hover, .refresh:hover{
+	color: #8987e4;
+}
+
+.add i, .save i, .cancel i, .refresh i{
+	font-size: 48px;
+}
+
+/* scroll */
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+/* add form */
+.quickaddForm{
+	font-size: 20px;
+	color: #fff;
+  overflow:hidden;
+  display:none;
+}
+
+.formFields{
+	border: 2px solid #858585;
+	border-radius: 4px;
+	background: #131313;
+	color: #858585;
+	width: calc(100% - 75px);
+	height: 48px;
+  padding-left: 16px;
+  vertical-align: center;
+	font-size: 22px;
+	padding-right: 16px;
+	margin: 10px 0px;
+}
+
+.quickaddForm i{
+	font-size: 30px;
+	padding: 5px;
+}
+
+.quickaddForm input:focus {
+  background: #efebeb;
+  color: #676767;
+}

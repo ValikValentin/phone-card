@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Phone book</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+	<!-- header -->
+		<header>
+			<div class="container clearfix">
+				<div class="search">
+					<form class="form-search">
+						<input class="search-field" id="text-to-find" type="search" name="q" placeholder="Search contact"> 
+						<input type="image" class="but-search" src="img/search-icon.png" onclick="javascript: FindOnPage('text-to-find'); return false;" >
+					</form>
+				</div>
+			</div>
+		</header>
+	<!-- end header -->
+	<div class="contact-scrolling">
+		<form class="quickaddForm" action="">
+			<label for="fullname">Name</label>
+				<br>
+			<input type="text" id="fullname" class="formFields" maxlength="12" name="name" required >
+			<br>
+
+			<label for="phone">Phone</label>
+				<br>
+			<input type="tel"  id="phone" name="phone" class="formFields"   required >
+			<i class="fa fa-plus" aria-hidden="true"></i>
+			<br>
+
+			<label for="email">E-Mail</label>
+				<br>
+			<input type="email" id="email" name="email"   class="formFields" required>
+			<i class="fa fa-plus" id="plus_email" aria-hidden="true"></i>
+			<br>
+
+			<button type="submit" class="cancel right" id="Cancel">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</button>
+		
+
+			<button type="submit" class="save right" id="Add">
+				<i class="fa fa-floppy-o" aria-hidden="true"></i>
+			</button>
+
+		</form>
+
+		<!-- add contact -->
+
+
+
+
+	<!-- contact -->
+		
+			<div class="addbook">
+
+				<!-- <div class="entry">
+					<div class="contact-info">
+						<div class="name"><p>Sachin Bhatnagar</p></div>
+						<div class="info-phone">
+							<span class="info">Tel:</span>
+							<div class="phone"><p>9316523541</p></div>
+						</div>
+						
+						<div class="info-emeil">
+							<span class="info">Email:</span>
+							<div class="email"><p>sachin@frameboxx.in</p></div>
+						</div>
+					</div>
+
+					<div class="button-setting right">
+						<div class="edit">
+							<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						</div>
+
+						<button class="del right" >
+							<i class="fa fa-trash" aria-hidden="true"></i>
+						</button>
+						
+					</div>
+
+				</div> -->
+
+
+
+
+
+			</div>
+
+			</div>
+		
+	<!-- end contact -->
+
+		<!-- footer -->
+		<footer>
+			<div class="container clearfix">
+				<form action="index.html">
+					<button class="refresh right">
+						<i class="fa fa-refresh" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<div class="quickadd">
+					<button type="submit" class="add right" id="QuickAdd">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</button>
+				</div>
+
+			</div>
+		</footer>
+	<!-- end footer -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	
+	<script type="text/javascript">
+ 
+</script>
+	</body>
+</html>
